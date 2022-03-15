@@ -29,7 +29,10 @@ class ActivityInformation:AppCompatActivity() {
         binding.userpass.text=datainput?.get(1)
         binding.usermail.text=datainput?.get(2)
 
-        data.add(ItemsViewModel("ssss"))
+        for(i in 1..50){
+            data.add(ItemsViewModel("ssss"))
+        }
+
         val adapter = RecyclerAdapter(data)
         recyclerview.adapter = adapter
 

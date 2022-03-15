@@ -12,13 +12,15 @@ import kotlin.random.Random
 class RecyclerAdapter(private val mList: List<ItemsViewModel>): RecyclerView.Adapter<RecyclerAdapter.ViewHolder>()  {
 
 
+    fun randomColor(){
 
+    }
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.ViewHolder {
         val v= LayoutInflater.from(parent.context).inflate(R.layout.card_layout,parent,false)
 
-        v.setBackgroundColor(Color.CYAN)
+        v.setBackgroundColor(Color.argb( Random.nextInt(0, 255),  Random.nextInt(0, 255),  Random.nextInt(0, 255),  Random.nextInt(0, 255)))
         return  ViewHolder(v)
     }
 

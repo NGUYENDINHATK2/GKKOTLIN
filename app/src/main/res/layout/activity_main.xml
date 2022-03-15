@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
     android:padding="15dp"
     tools:context=".MainActivity">
 
@@ -19,10 +20,10 @@
         android:layout_marginTop="50dp"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
     <EditText
-
+        android:textColor="@color/white"
         android:layout_marginTop="50dp"
         android:id="@+id/username"
         android:layout_width="match_parent"
@@ -33,7 +34,7 @@
         android:autofillHints="username"
         android:inputType="text" />
     <EditText
-
+        android:textColor="@color/white"
         android:layout_marginTop="10dp"
         android:id="@+id/usermail"
         android:layout_width="match_parent"
@@ -44,7 +45,7 @@
         android:autofillHints="username"
         android:inputType="text" />
     <EditText
-
+        android:textColor="@color/white"
         android:layout_marginTop="10dp"
         android:id="@+id/userpass"
         android:layout_width="match_parent"
@@ -56,9 +57,11 @@
         android:inputType="text" />
 
     <Button
+        android:textColor="@color/white"
         android:gravity="center"
         android:id="@+id/login"
         android:layout_marginTop="15dp"
+
         android:text="@string/login"
         android:layout_width="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/userpass"

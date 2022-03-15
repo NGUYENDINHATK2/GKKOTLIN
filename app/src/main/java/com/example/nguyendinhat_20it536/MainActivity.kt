@@ -31,6 +31,9 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
 
             }
+            else{
+                binding.nametag.text ="Vui Lòng Nhập Dữ Liệu"
+            }
 
         }
     }
