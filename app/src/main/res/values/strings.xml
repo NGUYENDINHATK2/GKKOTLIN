@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NguyenDinhAt_20it536</string>
+    <string name="nh_p_email">Nhập Email</string>
+    <string name="login">Login</string>
+    <string name="title">User Name</string>
+    <string name="gmail">Gmail</string>
+    <string name="password">PassWord</string>
+    <string name="nguy_n_nh_t">Nguyễn Đình Át</string>
+
+</resources>
