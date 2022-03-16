@@ -9,7 +9,7 @@ import com.example.nguyendinhat_20it536.databinding.ActivityInformationBinding
 class ActivityInformation:AppCompatActivity() {
     companion object {
         var  data =  ArrayList<ItemsViewModel>()
-        var capital:ArrayList<String> = arrayListOf("Hà Nội","BangKoc","HCM","London")
+        
     }
     private lateinit var binding: ActivityInformationBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,9 +30,9 @@ class ActivityInformation:AppCompatActivity() {
         binding.userpass.text=datainput?.get(1)
         binding.usermail.text=datainput?.get(2)
 
-        for(index in capital){
-            data.add(ItemsViewModel(index))
-        }
+       
+            data.add(ItemsViewModel("sss")
+        
 
 
         val adapter = RecyclerAdapter(data)
